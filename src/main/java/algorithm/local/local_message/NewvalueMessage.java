@@ -2,17 +2,13 @@ package algorithm.local.local_message;
 
 import lombok.Data;
 
-
 @Data
-public class ValueMessage {
+public class NewvalueMessage {
     int sendId;
     int valueIndex;
-    int[] newDataDelay;
 
-    public ValueMessage(int sendId, int valueIndex, int[] newDataDelay){
+    public NewvalueMessage(int sendId, int valueIndex){
         this.sendId = sendId;
         this.valueIndex = valueIndex;
-        this.newDataDelay = newDataDelay;
-
     }
 }

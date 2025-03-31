@@ -5,18 +5,12 @@ import lombok.Data;
 import java.util.Arrays;
 import java.util.Objects;
 
-/**
- * @ClassName: BroadcastMessage
- * @Description: 广播消息模板
- * @author: hjh
- * @date: 2023/2/10 15:07
- */
 @Data
 public class BroadcastMessage {
     int sendId;
     int valueIndex;
-    int[] sendDataDelay;  //sendId 对于Data 的Delay
-    int acceptTag;        //表示当前Agent是否满足硬约束 所有DataDelay<maxDistance
+    int[] sendDataDelay;
+    int acceptTag;
 
 
 

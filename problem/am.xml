@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <manifest>
     <agents>
-        <agent name="DSA_CEDC" class="algorithm.dynamic.DSA_CEDC" method="sync"></agent>
-        <agent name="MGM_CEDC" class="algorithm.dynamic.MGM_CEDC" method="sync"></agent>
+        <agent name="DSA_CEDC" class="algorithm.dynamic.Impl.DSA_CEDC" method="sync"></agent>
+        <agent name="MGM_CEDC" class="algorithm.dynamic.Impl.MGM_CEDC" method="sync"></agent>
 
     </agents>
 </manifest>

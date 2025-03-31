@@ -56,9 +56,6 @@ public abstract class LocalSearchCEDC1 extends DynamicSyncAgent {
         broadcastDataDelayMsg(acceptTag);
     }
 
-    /**
-     * 初始化localDataDelay
-     */
     private void initLocalDataDelay() {
         int[] localDataDelay = new int[data.length];
         for(int dataId=0;dataId<data.length;dataId++){
@@ -292,7 +289,6 @@ public abstract class LocalSearchCEDC1 extends DynamicSyncAgent {
 
 
     private int calculateConstraintLatencyBenefit(int neighbourId, Integer agentValueIndex) {
-        // 生成约束下所有用户
         Set<Integer> allUsersUnderConstaraint = new HashSet<>();
         for(int user : neighboursHostUsers.get(neighbourId)){
             allUsersUnderConstaraint.add(user);
@@ -403,7 +399,7 @@ public abstract class LocalSearchCEDC1 extends DynamicSyncAgent {
             spaceNotAssign.put(neighbourId,false);
         }
         BR_local_neighbour += costCE*fullSpace;
-        return BR_local_neighbour;  //效益
+        return BR_local_neighbour;
     };
 
     public String PrintLocalCost(Integer index) {
@@ -515,7 +511,7 @@ public abstract class LocalSearchCEDC1 extends DynamicSyncAgent {
             lastSendMessage.put(neighbour,new BroadcastMessage() );
         }
         neighbourValueIndexMap = new HashMap<>();
-        localAcceptTag = new HashMap<>();  //初始化为邻居数量的负数
+        localAcceptTag = new HashMap<>();
         localAcceptAsk = new HashMap<>();
         localAcceptRes = new HashMap<>();
         localAcceptValue = new HashMap<>();
