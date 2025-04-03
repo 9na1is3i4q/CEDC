@@ -18,17 +18,20 @@ This project is a Java platform for solving the Collaborative Edge Data Caching 
 
 ## Catalog Structure Description
 
-    project-root/
-    ├── src/                                  # Source code directory
-    │   ├── main/                             # Main application source
-    │   └── java/                             # Java source code
-    │       ├── algorithm/                    # DSA-CEDC and MGM-CEDC algorithms
-    │       ├── problem_generator/            # Problem Generation
-    │       ├── problem_parser/               # Problem Parser
-    │       └── Test/                         # Test code
-    ├── readme                                # Help document
-    ├── problem/                              # CEDC problem data
-    └── pom.xml                                # Maven configuration file
+```
+
+project-root/
+├── src/                                   # Source code directory
+│   ├── main/                              # Main application source
+│   │   └── java/                          
+│   │       ├── algorithm/                 # DSA-CEDC and MGM-CEDC algorithms
+│   │       ├── problem_generator/         # Problem Generation
+│   │       ├── problem_parser/            # Problem Parser
+│   │       └── Test/                      # Test code
+├── readme/                                # Help document
+├── problem/                               # CEDC problem data
+└── pom.xml                                # Maven configuration file
+```
 
 ## Usage Instructions&#x20;
 
